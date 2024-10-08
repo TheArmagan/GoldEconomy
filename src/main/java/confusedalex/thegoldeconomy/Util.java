@@ -29,7 +29,7 @@ public class Util {
   public void sendMessageToPlayer(String message, Player player) {
     String prefix = plugin.getConfig().getString("prefix");
     if (player != null) {
-      player.sendMessage(String.format(prefix + ChatColor.translateAlternateColorCodes('&', message), prefix));
+      player.sendMessage(String.format(ChatColor.translateAlternateColorCodes('&', prefix + message), prefix));
     }
   }
 }
